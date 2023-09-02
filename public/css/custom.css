@@ -1,0 +1,83 @@
+/* header */
+.user-profile-img {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.user-profile-img :hover {
+    filter: brightness(0.7);
+}
+
+.user-profile-pic-wrapper {
+    position: relative;
+}
+
+.user-profile-edit-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: min-content;
+    width: min-content;
+    text-align: center;
+    opacity: 0;
+    border: 1px solid #0275d8;
+    background-color: #0275d8;
+    border-radius: 10px;
+    color: #fff !important;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.user-profile-pic-wrapper:hover .user-profile-edit-btn {
+    opacity: 1;
+}
+
+.user-profile-more-detail-btn {
+    color: #000;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.user-profile-more-detail-text {
+    background-color: #cce3f7;
+    border-radius: 9px;
+}
+
+.user-profile-more-detail-text:hover {
+    color: #fff;
+    background-color: #0275d8;
+}
+
+.user-profile {
+    border-radius: 52%;
+}
+
+/* for table */
+.custom-tables {
+    width: 100%;
+    text-align: center;
+    max-height: 100vh;
+}
+
+.custom-tables thead {
+    padding: 2px;
+    margin: 12px;
+    width: max-content;
+    background: #e9ecef;
+}
+
+.bg-custom-light-gray {
+    background-color: #bfc7cf85;
+}
+.form-select,.form-check-input,.startDate{
+    cursor: pointer;
+}
+
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
